@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Analysis</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Analysis</h1>
+        <form id="codeForm">
+            <label for="difficulty">Select Difficulty Level:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" readonly></textarea>
+
+            <label for="userCode">Your Code:</label>
+            <textarea id="userCode" name="userCode" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="analysisResults">
+            <h2>Analysis Results</h2>
+            <p><strong>Syntax Valid:</strong> <span id="syntaxValid">N/A</span></p>
+            <p><strong>Function Check:</strong> <span id="functionCheck">N/A</span></p>
+            <p><strong>Logic Check:</strong> <span id="logicCheck">N/A</span></p>
+            <p><strong>Quality Check:</strong> <span id="qualityCheck">N/A</span></p>
+            <p><strong>Score:</strong> <span id="score">N/A</span></p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
